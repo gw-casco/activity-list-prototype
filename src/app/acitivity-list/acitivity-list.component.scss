@@ -1,0 +1,26 @@
+.activity-list-row {
+  border: thin solid #dddddd;
+}
+
+.activity-list-row:hover {
+  filter: brightness(0.9);
+}
+
+.activity-list-row.run {
+  background: green;
+  color: white;
+}
+
+.activity-list-row.past {
+  background: rgb(212, 212, 212);
+  color: black;
+}
+
+.activity-list-row.future {
+  background: white;
+  color: black;
+}
+
+.activity-list-row.selected {
+  border: medium solid goldenrod;
+}
