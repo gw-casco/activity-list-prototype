@@ -8,6 +8,7 @@
   (selectedRowKeysChange)="log($event)"
   [selectedRowKeys]="[]"
   [remoteOperations]="{ sorting: true, filtering: true }"
+  #grid
 >
   <dxo-search-panel [visible]="true"></dxo-search-panel>
   <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
@@ -16,6 +17,10 @@
     <tr
       class="activity-list-row {{ data.data.rowType }} "
       [ngClass]="{ selected: data.isSelected }"
+      (click)="
+        grid.instance.selectRowsByIndexes([data.rowIndex]);
+        grid.instance.repaint()
+      "
     >
       <td *ngFor="let column of data.columns">
         {{ data.data[column.dataField] }}

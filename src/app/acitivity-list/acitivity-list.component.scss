@@ -6,19 +6,19 @@
   filter: brightness(0.9);
 }
 
-.activity-list-row.run {
-  background: green;
-  color: white;
+.activity-list-row.run td {
+  background: green !important;
+  color: white !important;
 }
 
 .activity-list-row.past {
-  background: rgb(212, 212, 212);
-  color: black;
+  background: rgb(212, 212, 212) !important;
+  color: black !important;
 }
 
 .activity-list-row.future {
-  background: white;
-  color: black;
+  background: white !important;
+  color: black !important;
 }
 
 .activity-list-row.selected {
