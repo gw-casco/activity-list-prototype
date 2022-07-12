@@ -7,12 +7,12 @@
 }
 
 .activity-list-row.run td {
-  background: green !important;
+  background: var(--green) !important;
   color: white !important;
 }
 
 .activity-list-row.past {
-  background: rgb(212, 212, 212) !important;
+  background: var(--gray) !important;
   color: black !important;
 }
 
@@ -22,5 +22,5 @@
 }
 
 .activity-list-row.selected {
-  border: medium solid goldenrod;
+  border: medium solid var(--gold);
 }
