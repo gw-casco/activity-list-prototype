@@ -22,7 +22,10 @@
         grid.instance.repaint()
       "
     >
-      <td *ngFor="let column of data.columns">
+      <td
+        *ngFor="let column of data.columns"
+        [ngClass]="{ alignRight: column.alignment === 'right' }"
+      >
         {{ data.data[column.dataField] }}
       </td>
     </tr>

@@ -21,8 +21,9 @@ export class AcitivityListComponent implements OnInit {
         data = filter(
           data,
           (obj) =>
-            obj.rowType === 'future' &&
-            some(obj, (v: any) => includes(v, searchString))
+            obj.rowType === 'run' ||
+            (obj.rowType === 'future' &&
+              some(obj, (v: any) => includes(v, searchString)))
         );
       }
       data = orderBy(
